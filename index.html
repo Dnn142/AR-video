@@ -74,5 +74,16 @@
 
             <a-entity camera></a-entity>
         </a-scene>
+
+        <!-- Botón para activar el sonido -->
+        <button id="unmuteButton" style="position: absolute; top: 20px; left: 20px;">Activar Sonido</button>
+
+        <script>
+            // Evento click para desmutear el video
+            document.querySelector('#unmuteButton').addEventListener('click', function () {
+                var video = document.querySelector('#vid');
+                video.muted = false;
+            });
+        </script>
     </body>
 </html>
